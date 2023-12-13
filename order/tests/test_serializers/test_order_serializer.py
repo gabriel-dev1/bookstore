@@ -3,7 +3,7 @@ from order.factories import OrderFactory, ProductFactory
 from order.serializers import OrderSerializer 
 
 class TestOrderSerializer(TestCase):
-    def setup(self):
+    def setUp(self):
         self.product_1 = ProductFactory()
         self.product_2 = ProductFactory()
 
