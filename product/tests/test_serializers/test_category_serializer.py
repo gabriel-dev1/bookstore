@@ -1,11 +1,11 @@
 from django.test import TestCase 
-from product.factories import CategoryFactory
+from product.factories import CategoryFactory, ProductFactory
 from product.serializers import CategorySerializer 
 
 class TestCategorySerializer(TestCase):
-    def setup(self): 
+    def setUp(self): 
         self.category = CategoryFactory(title='food')
-        self.category_serializer = CategorySerializer(self.category) 
+        self.category_serializer = CategorySerializer(self.category)
 
     def test_order_serializer(self):
         serializer_data = self.category_serializer.data

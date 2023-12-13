@@ -3,7 +3,7 @@ from product.factories import CategoryFactory, ProductFactory
 from product.serializers import ProductSerializer 
 
 class TestProductSerializer(TestCase):
-    def setup(self): 
+    def setUp(self): 
         self.category = CategoryFactory(title='technology')
         self.product_1 = ProductFactory(title='mouse', price=100, category=[self.category])
         self.product_serializer = ProductSerializer(self.product_1)
