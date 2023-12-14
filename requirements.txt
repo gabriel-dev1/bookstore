@@ -1,6 +1,7 @@
 asgiref==3.7.2
 colorama==0.4.6
 Django==5.0
+django-extensions==3.2.3
 djangorestframework==3.14.0
 factory-boy==3.3.0
 Faker==20.1.0
